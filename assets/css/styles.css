@@ -51,6 +51,26 @@ a {
     cursor: pointer;
 }
 
+.subtitle {
+    position: relative;
+    color: #152427;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+    margin-left: 46px;
+}
+
+.subtitle::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #152427;
+    left: -46px;
+    top: 12px;
+}
+
 
 /* Header */
 .header {
@@ -277,24 +297,8 @@ a {
     margin-bottom: 77px;
 }
 
-.subtitle {
-    position: relative;
-    color: #152427;
-    font-family: Poppins;
-    font-size: 1.6rem;
-    font-weight: 500;
+.service__subtitle {
     line-height: 1.62;
-    margin-left: 46px;
-}
-
-.subtitle::after {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 1px;
-    background: #152427;
-    left: -46px;
-    top: 12px;
 }
 
 .service__row {
@@ -401,6 +405,7 @@ a {
 /* About */
 .about {
     padding-top: 80px;
+    margin-bottom: 79px;
 }
 
 .about__wrap {
@@ -617,4 +622,116 @@ a {
 
 .about__teams-img:first-child {
     margin-left: 0;
+}
+
+/* Process */
+.process {
+    position: relative;
+    padding-top: 36px;
+}
+
+.process__heading {
+    position: relative;
+    max-width: 477px;
+}
+
+.process__heading::after {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: #152427;
+    bottom: 20px;
+    right: -6px;
+}
+
+.process__img {
+    position: absolute;
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
+    right: 277px;
+    top: -8px;
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process__list-item {
+    display: flex;
+    align-items: center;
+    height: 185px;
+    border-bottom: 1px solid #83A17D;
+    transition: .25s;
+}
+
+.process__list-item:hover {
+    border-radius: 33px;
+    background: #E2EDDF;
+    border: none;
+}
+
+.process__list-item:hover .process__list-learn {
+    display: inline-block;
+}
+
+.process__list-number {
+    color: #143C3C;
+    font-family: Poppins;
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 7.22;
+    margin-left: 20px;
+}
+
+.process__list-number:first-child {
+    margin-left: 30px;
+}
+
+.process__list-learn {
+    display: none;
+    margin-top: 22px;
+    color: #575D5E;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: underline;
+    transition: .25s;
+
+}
+
+
+.process__list-title {
+    color: #152427;
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.process__list-more {
+    margin-left: 49px;
+
+}
+
+.process__list-item:first-child .process__list-more {
+    margin-left: 64px;
+}
+
+.process__list-desc {
+    width: 572px;
+    height: 84px;
+    margin-left: auto;
+    margin-right: 41px;
+    color: #7D8188;
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.56;
 }
