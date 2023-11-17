@@ -237,7 +237,7 @@ a {
 
 /* Logo */
 .logo {
-    margin: 133px 0 53px;
+    margin: 130px 0 53px;
 }
 
 .logo__list {
@@ -734,4 +734,81 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 1.56;
+}
+
+/* Projects */
+.projects {
+    position: relative;
+    margin-top: 148px;
+    background: #143C3C;
+}
+
+.projects__text {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 93px;
+    padding-top: 116px;
+}
+
+.projects__text-desc {
+    color: #6A8383;
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.projects__heading {
+    position: relative;
+    max-width: 457px;
+    color: #E7F9F9
+}
+
+.projects__text-browse {
+    margin-top: 13px;
+
+}
+
+.projects__text-browse:hover {
+    opacity: 0.7;
+}
+
+.projects__text-link {
+    color: #FFF;
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.projects__text-btn svg {
+    rotate: 180deg;
+    margin-left: 26px;
+    color: #80A07B;
+}
+
+.projects__heading::after {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: #152427;
+    bottom: 20px;
+    right: 98px;
+}
+
+.projects__video {
+    margin: 65px 0 63px;
+    border-radius: 22px;
+    width: 100%;
+}
+
+.projects-vector {
+    position: absolute;
+    right: 134px;
+    top: 207px;
+}
+
+.projects-vector:last-child {
+    top: 114px;
 }
