@@ -354,7 +354,6 @@ a {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 16px;
     margin-top: 78px;
-    display: flex;
 }
 
 .service__list-item {
@@ -920,4 +919,140 @@ a {
 
 .features__list-item:last-child .features__list-text {
     margin: 12px 40px 0 46px;
+}
+
+/* Blog */
+.blog {
+    margin-top: 92px;
+    padding-top: 92px;
+}
+
+.blog__text {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__heading {
+    position: relative;
+    max-width: 520px;
+}
+
+.blog__heading::after {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: #152427;
+    bottom: 20px;
+    right: -30px;
+}
+
+
+.blog__desc {
+    max-width: 409px;
+    color: #7D8188;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.blog__list {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.blog__list-item {
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.blog__list-item:hover {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
+}
+
+.blog__list-item:hover .blog__list-body {
+    transform: translateX(30px);
+}
+
+.blog__list-body {
+    width: 346px;
+    padding-right: 30px;
+    transition: .25s;
+}
+
+.blog__list-item:hover .blog__list-action {
+    color: #fff;
+    background: #143C3C;
+}
+
+.blog__list-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.blog__list-action {
+    margin-top: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 107px;
+    height: 26px;
+    border-radius: 20px;
+    background: #E2EDDF;
+    color: #000;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.blog__list-desc {
+    margin-top: 13px;
+    padding-bottom: 9px;
+    width: 100%;
+    color: #143C3C;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.blog__desc-2row {
+    padding-bottom: 40px;
+}
+
+
+.blog__list-line {
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+}
+
+.blog__list-time {
+    position: relative;
+    margin: 16px 13px 12px 0;
+    text-align: end;
+    color: #575D5E;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.blog__list-time::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+    top: -16px;
+    left: 0;
 }
