@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../f8-project-03"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "f8-project-03-ex"
+	}
+}
