@@ -1071,6 +1071,7 @@ a {
 }
 
 .blog__list-desc {
+    display: inline-block;
     margin-top: 13px;
     padding-bottom: 9px;
     width: 100%;
